@@ -14,6 +14,11 @@ def index():
 def xd():
     return render_template("xd.html")
 
+@app.route('/password_generator')
+def password():
+    passwd = password_generator()
+    return render_template("password_generator.html", passwd)
+
 # STRONA Z LICEUM XD
 @app.route('/strona')
 def strona():
