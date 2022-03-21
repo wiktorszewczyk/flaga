@@ -16,8 +16,7 @@ def xd():
 
 @app.route('/password_generator')
 def password():
-    passwd = password_generator()
-    return render_template("password_generator.html", passwd)
+    return render_template("password_generator.html")
 
 # STRONA Z LICEUM XD
 @app.route('/strona')
