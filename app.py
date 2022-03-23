@@ -7,12 +7,12 @@ app=Flask(__name__,
 
 @app.route('/')
 def index():
-    text = open('dane/xd.txt').read()
-    return render_template("strona.html", text=text)
+    text = open('data/data.txt').read()
+    return render_template("index.html", text = text)
 
-@app.route('/xd')
-def xd():
-    return render_template("xd.html")
+@app.route('/subdomain')
+def subdomain():
+    return render_template("subdomain.html")
 
 # PASSWORD GENERATOR
 from python_projects import password_generator
@@ -25,7 +25,7 @@ def passwd_gen():
 # STRONA Z LICEUM XD
 @app.route('/strona')
 def strona():
-    return render_template("index.html")
+    return render_template("strona.html")
 
 @app.route('/kontakt-i-wspolpraca')
 def kontaktiwspolpraca():
