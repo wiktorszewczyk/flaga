@@ -14,6 +14,11 @@ def index():
 def subdomain():
     return render_template("subdomain.html")
 
+# TEST SUBDOMAIN
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
 # PASSWORD GENERATOR
 from python_projects import password_generator
 
