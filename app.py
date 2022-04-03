@@ -15,9 +15,9 @@ def subdomain():
     return render_template("subdomain.html")
 
 # TEST SUBDOMAIN
-@app.route('/test')
+@app.route('/tests')
 def test():
-    return render_template("test.html")
+    return render_template("tests.html")
 
 # PASSWORD GENERATOR
 from python_projects import password_generator
